@@ -45,3 +45,7 @@ Also give me:
 - Including tactical context that will stale quickly
 - Forgetting to include uncertainty handling
 - Asking the model to be contrarian without calibration
+
+## Next step
+
+After creating the master prompt variants, run [Prompt 07: Memory Execution](07-memory-execution.md) if the user is ready to apply the approved memory cleanup plan.

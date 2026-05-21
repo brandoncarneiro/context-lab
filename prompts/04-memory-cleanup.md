@@ -33,3 +33,7 @@ Be conservative. Only recommend saving facts that are stable, useful across many
 - Saving active deals, pipeline, or private project state
 - Saving sensitive third-party details
 - Writing vague memories that will not improve future output
+
+## Next step
+
+Use this plan as the source of truth for [Prompt 07: Memory Execution](07-memory-execution.md). Only execute memory changes after the user explicitly asks to apply the plan.

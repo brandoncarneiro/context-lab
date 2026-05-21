@@ -35,3 +35,9 @@ Better: "Be direct and challenge weak assumptions, but calibrate tone to the sta
 Bad: turning every task into an intake form.
 
 Better: ask only questions that materially change the answer. Otherwise make a best-effort recommendation and state assumptions.
+
+## 7. Omitting execution confirmation
+
+Bad: silently claiming memory work is done without saying what changed.
+
+Better: end with a concise execution confirmation that lists saved, updated, deleted, intentionally skipped, and unsupported changes.

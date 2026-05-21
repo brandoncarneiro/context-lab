@@ -23,3 +23,7 @@ A workflow should expose assumptions, inputs, outputs, risks, and approval point
 ## 6. Optimize for execution
 
 Good AI output should produce decisions, drafts, plans, checklists, prompts, or next actions. Vague reflection is not enough.
+
+## 7. Confirm memory execution
+
+When memory changes are applied, the model should confirm what was saved, updated, forgotten, intentionally not saved, and what could not be changed.

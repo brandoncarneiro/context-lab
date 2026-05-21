@@ -39,6 +39,7 @@ Do not save tactical details, active deals, current priorities, project status, 
 - Memory cleanup workflow
 - AI workflow planner
 - Reusable master prompt generator
+- Memory execution prompt for applying approved memory changes
 - Templates for saved context documents
 - Example founder/operator outputs
 
@@ -59,16 +60,17 @@ Do not save tactical details, active deals, current priorities, project status, 
 4. [Memory Cleanup](prompts/04-memory-cleanup.md)
 5. [AI Workflow Plan](prompts/05-ai-workflow-plan.md)
 6. [Master Prompt](prompts/06-master-prompt.md)
+7. [Memory Execution](prompts/07-memory-execution.md)
 
 ## Quickstart
 
 Open a new ChatGPT conversation and paste the prompt in `prompts/01-context-audit.md`.
 
-After each response, continue through the prompts in order. Correct the model aggressively when it guesses, flatters, or treats stale context as current.
+After each response, continue through the seven prompts in order. Correct the model aggressively when it guesses, flatters, or treats stale context as current. Prompt 07 is the execution step: it asks ChatGPT to apply the approved memory cleanup plan and confirm what changed.
 
 ## Repository contents
 
-- `prompts/`: the core prompt sequence
+- `prompts/`: the core seven-step prompt sequence
 - `templates/`: reusable blank context documents
 - `docs/`: principles, memory rules, and failure modes
 - `examples/`: example outputs for adaptation
