@@ -12,7 +12,7 @@ Run the prompts in this order in a new ChatGPT conversation:
 4. [Memory Cleanup](../prompts/04-memory-cleanup.md)
 5. [AI Workflow Plan](../prompts/05-ai-workflow-plan.md)
 6. [Master Prompt](../prompts/06-master-prompt.md)
-7. [Memory Execution](../prompts/07-memory-execution.md)
+7. [Memory Execution or Handoff](../prompts/07-memory-execution.md)
 
 ## Memory cleanup fast path
 
@@ -20,11 +20,11 @@ Use this path when your main goal is to clean up ChatGPT memory:
 
 1. Run [Context Audit](../prompts/01-context-audit.md)
 2. Run [Memory Cleanup](../prompts/04-memory-cleanup.md)
-3. Run [Memory Execution](../prompts/07-memory-execution.md)
+3. Run [Memory Execution or Handoff](../prompts/07-memory-execution.md)
 
 ## How to get better output
 
-Correct the model aggressively when it:
+Correct the model when it:
 
 - flatters you
 - guesses beyond evidence
@@ -45,7 +45,7 @@ Save the output of Prompt 05 as your reusable workflow library.
 Do not save:
 
 - current projects
-- active deals
+- active deals, applications, or negotiations
 - pipeline details
 - weekly priorities
 - temporary goals
@@ -55,10 +55,7 @@ Do not save:
 
 ## Final check
 
-After Prompt 07, you should have a confirmation showing:
+After Prompt 07, you should have one of two outputs:
 
-- memories saved
-- memories updated or corrected
-- memories forgotten or deleted
-- items intentionally not saved
-- items the model could not change
+- a direct execution confirmation when durable saved memory management is available
+- a Memory Execution Sheet when memory changes cannot be applied from the current chat

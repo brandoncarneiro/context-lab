@@ -6,7 +6,7 @@ Last updated: YYYY-MM-DD
 
 ### Area
 
-Strategy / Sales / GTM / Finance / Hiring / Product / Operations / Writing / Research / Productivity / Personal
+Strategy / Planning / Writing / Research / Productivity / Learning / Creative work / Operations / Personal / Other
 
 ### Use case
 

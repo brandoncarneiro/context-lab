@@ -10,11 +10,11 @@ Using my answers and your prior audit, create a clean "Current Operating Profile
 
 Organize it into these sections:
 
-1. Identity and role
-2. Company and business context
+1. Role and current focus
+2. Work, study, creative, or project context
 3. Current goals
-4. Current projects
-5. Key metrics and outcomes
+4. Current projects or responsibilities
+5. Key outcomes, metrics, or success criteria
 6. Decision-making style
 7. Communication preferences
 8. Tools and workflows

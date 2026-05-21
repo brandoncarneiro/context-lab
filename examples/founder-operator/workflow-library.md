@@ -1,6 +1,6 @@
 # Example Founder/Operator AI Workflow Library
 
-This is a fictionalized example.
+This optional founder/operator example is fictionalized. Adapt it for your own role or use case.
 
 ## Weekly strategy review
 
@@ -24,7 +24,7 @@ Keeps AI recommendations tied to current operating reality instead of stale assu
 
 - Current goals
 - Active projects
-- Metrics
+- Metrics or success criteria
 - Open decisions
 - Constraints
 
@@ -37,7 +37,7 @@ Keeps AI recommendations tied to current operating reality instead of stale assu
 
 ### Risk or failure mode
 
-The model may over-index on stale context or generic founder advice.
+The model may over-index on stale context or generic role advice.
 
 ### Recommended frequency
 

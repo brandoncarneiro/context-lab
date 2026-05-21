@@ -35,17 +35,16 @@ Working documents are for live operating state.
 
 | Save to memory | Keep in context doc |
 |---|---|
-| Stable role | Current projects |
+| Stable role or durable focus | Current projects |
 | Communication preferences | This quarter's goals |
-| Durable interests | Active deals |
-| Long-term constraints | Pipeline status |
+| Durable interests | Active deals, deadlines, or commitments |
+| Long-term constraints | Pipeline, application, or project status |
 | Persistent advice style | Weekly priorities |
 | Tool preferences | Tactical plans |
 
 ## Rule of thumb
 
 If it may be wrong in 30 to 90 days, do not save it as durable memory.
-
 
 ## Memory is not a project tracker
 
@@ -55,7 +54,7 @@ Use a dated working context document for:
 
 - current priorities
 - active projects
-- open deals
+- open deals, deadlines, or commitments
 - launch plans
 - weekly operating cadence
 - changing tool stacks

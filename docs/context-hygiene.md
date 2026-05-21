@@ -26,7 +26,7 @@ Review your operating profile:
 
 - monthly for high-change work
 - quarterly for stable work
-- immediately after role, company, project, or personal constraint changes
+- immediately after role, organization, project, or personal constraint changes
 
 Review memory:
 

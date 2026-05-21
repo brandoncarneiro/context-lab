@@ -10,12 +10,12 @@ Based on that audit, interview me to correct and improve your context.
 
 Ask me the minimum number of high-leverage questions needed to understand:
 
-- My current work role and company priorities
-- My top 3 business objectives
-- My current projects
-- My weekly operating cadence
-- My key metrics or KPIs
-- My team, collaborators, and stakeholders
+- My current work, study, creative, or personal role
+- My top 3 objectives
+- My current projects or recurring responsibilities
+- My weekly or regular operating cadence
+- My key outcomes, metrics, deadlines, or success criteria
+- My collaborators, stakeholders, audience, clients, or team, if relevant
 - My tools and systems
 - My decision-making preferences
 - What kind of help I want from ChatGPT

@@ -36,4 +36,4 @@ Be conservative. Only recommend saving facts that are stable, useful across many
 
 ## Next step
 
-Use this plan as the source of truth for [Prompt 07: Memory Execution](07-memory-execution.md). Only execute memory changes after the user explicitly asks to apply the plan.
+Use this plan as the source of truth for [Prompt 07: Memory Execution or Handoff](07-memory-execution.md). Only execute or hand off memory changes after the user explicitly asks to apply the plan.

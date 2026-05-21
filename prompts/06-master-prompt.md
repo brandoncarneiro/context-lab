@@ -29,7 +29,7 @@ Also give me:
 1. A short version under 1,500 characters.
 2. A longer version for important strategy conversations.
 3. A version optimized for writing help.
-4. A version optimized for business strategy and execution.
+4. A version optimized for strategy and execution.
 
 ## Expected output
 
@@ -37,7 +37,7 @@ Also give me:
 - A short prompt under 1,500 characters
 - A strategy version
 - A writing version
-- A business execution version
+- An execution version
 
 ## Failure modes
 
@@ -48,4 +48,4 @@ Also give me:
 
 ## Next step
 
-After creating the master prompt variants, run [Prompt 07: Memory Execution](07-memory-execution.md) if the user is ready to apply the approved memory cleanup plan.
+After creating the master prompt variants, run [Prompt 07: Memory Execution or Handoff](07-memory-execution.md) if the user is ready to apply or hand off the approved memory cleanup plan.

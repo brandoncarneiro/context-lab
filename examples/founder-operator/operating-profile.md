@@ -2,14 +2,14 @@
 
 Last updated: 2026-05-21
 
-This is a fictionalized example. Replace it with your own audited context.
+This optional founder/operator example is fictionalized. Replace it with your own audited context.
 
 ## 1. Identity and role
 
 ### Confirmed facts
 
-- The user is a founder/operator building practical AI workflow systems.
-- The user values inspectable workflows and execution over abstract AI hype.
+- The user is a founder/operator building a software or services business.
+- The user values clear workflows and execution over vague strategy.
 
 ### Reasonable inferences
 
@@ -17,24 +17,24 @@ This is a fictionalized example. Replace it with your own audited context.
 
 ### Unknowns
 
-- Current company stage, revenue model, and team size are not confirmed.
+- Current organization stage, revenue model, and team size are not confirmed.
 
-## 2. Company and business context
+## 2. Work and business context
 
 ### Confirmed facts
 
-- The user is working on AI workflow systems.
+- The user is building a business.
 
 ### Reasonable inferences
 
-- The user likely cares about practical software delivery and agent workflow reliability.
+- The user likely cares about practical delivery, reliability, and repeatable workflows.
 
 ### Unknowns
 
-- Current company priorities, customer segments, and funding status are unknown.
+- Current priorities, customer segments, and funding status are unknown.
 
 ## Things to avoid assuming
 
 - Do not assume current projects are still active unless recently confirmed.
 - Do not assume active deals, priorities, or pipeline belong in memory.
-- Do not infer confidential business context from public repositories.
+- Do not infer confidential business context from public materials.

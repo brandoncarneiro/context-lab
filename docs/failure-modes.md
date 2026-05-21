@@ -2,7 +2,7 @@
 
 ## 1. Saving tactical details to memory
 
-Bad: "Remember that I am working on the Acme proposal this week."
+Bad: "Remember that I am working on this proposal this week."
 
 Better: keep this in a working context document.
 
@@ -40,4 +40,10 @@ Better: ask only questions that materially change the answer. Otherwise make a b
 
 Bad: silently claiming memory work is done without saying what changed.
 
-Better: end with a concise execution confirmation that lists saved, updated, deleted, intentionally skipped, and unsupported changes.
+Better: end with a concise execution or handoff confirmation that lists saved, updated, deleted, intentionally skipped, and unsupported changes.
+
+## Pretending memory was changed
+
+Bad: saying memory changed when the chat does not have durable memory-management capability.
+
+Better: check capability first. If unavailable, produce a Memory Execution Sheet and say no memory changes were executed.

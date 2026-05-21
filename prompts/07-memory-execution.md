@@ -1,10 +1,10 @@
-# 07 Memory Execution
+# 07 Memory Execution or Handoff
 
 ## Purpose
 
-Use this after completing the memory cleanup plan when you are ready to apply approved memory changes.
+Use this after completing the memory cleanup plan when you are ready to apply approved memory changes or prepare them for a memory-enabled chat.
 
-This is the execution step. It should save only durable, stable, useful context to ChatGPT memory and avoid saving tactical, speculative, sensitive, or temporary information.
+This is not another audit. It is the execution or handoff step for the completed memory cleanup plan.
 
 ## When to use
 
@@ -15,78 +15,99 @@ This is the execution step. It should save only durable, stable, useful context 
 
 ## Prompt
 
-Now execute the memory cleanup plan created in Prompt 04.
+Now execute or hand off the memory cleanup plan created in Prompt 04.
 
-Use your completed memory cleanup plan as the source of truth.
+Use the completed memory cleanup plan from this same chat as the source of truth. Do not recreate the audit.
 
-For every item marked **“Should be saved as durable memory,”** save it to memory.
+If the completed memory cleanup plan is not available in this chat, stop and ask me to paste the completed memory cleanup plan before continuing.
 
-For every item marked **“Should be deleted or corrected if currently remembered,”** update or forget the inaccurate, stale, or unsupported version.
+First, check whether durable saved memory management is available in this current chat.
 
-For every item marked **“Should not be saved because it is temporary,”** do not save it.
+Do not infer this capability. If you are not certain you can directly manage durable saved memories, treat memory management as unavailable.
 
-For every item marked **“Should be kept only in this project/context document,”** do not save it to memory.
+Practical note: If memory updates appear unavailable, check whether your current ChatGPT mode, workspace, model, or settings allow saved memory. Some environments may not expose durable memory writes.
 
-For every item marked **“Sensitive context that should only be used when explicitly provided,”** do not save it to memory unless I explicitly said it should be remembered.
+## Path A: Durable memory management is available
 
-Be conservative. Only save stable facts, durable preferences, and reusable context that will improve future conversations.
+If you can directly create, update, and delete durable saved memories from this chat, execute the approved memory cleanup plan.
 
-Do not save:
+Apply only the approved changes from the cleanup plan:
 
-- Current projects that may change soon
-- Tactical priorities
-- Pipeline details
-- Temporary goals
-- Private operational details
-- Anything speculative
-- Anything inferred but not confirmed by me
-- Anything likely to become stale
+- Save items marked as durable, stable, useful memory.
+- Update or correct stale or inaccurate items where a corrected durable version exists.
+- Forget or delete stale, inaccurate, sensitive, or unsafe saved memories marked for deletion.
+- Do not save temporary, tactical, speculative, sensitive, project-only, or stale-prone items.
+- Do not save anything inferred but not confirmed by me.
 
-Before making each memory update, silently check whether it is durable, useful, and safe to remember.
+Before each memory change, silently check whether the item is durable, useful, confirmed, and safe to remember.
 
-After executing, give me a concise confirmation with these sections:
+After executing, give me a concise report with these sections:
 
 1. Memories saved
 2. Memories updated or corrected
 3. Memories forgotten or deleted
 4. Items intentionally not saved
-5. Items you were unable to change, if any
+5. Unsupported or manual actions, if any
 
-Do not recreate the memory plan. Execute it.
-
-## Expected output
-
-A concise execution confirmation with:
-
-- Memories saved
-- Memories updated or corrected
-- Memories forgotten or deleted
-- Items intentionally not saved
-- Items the model was unable to change
-
-## Required final confirmation
-
-End the response with this exact section:
+End with this exact section:
 
 ```text
 Execution confirmation:
-- Memory changes applied where supported.
+- Durable memory changes were applied where supported.
 - Temporary, tactical, speculative, sensitive, and stale items were not saved.
 - Any unsupported changes are listed above for manual action.
 ```
 
+## Path B: Durable memory management is unavailable
+
+If you cannot directly manage durable saved memories from this chat, say so clearly.
+
+Do not pretend anything was saved, updated, corrected, forgotten, or deleted.
+
+Produce a `Memory Execution Sheet` using only the completed cleanup plan:
+
+```text
+Memory Execution Sheet
+
+A. Exact memories to save
+- [List exact durable memory entries to save.]
+
+B. Exact memories to forget or delete
+- [List exact stale, inaccurate, sensitive, or unsafe saved memories to remove.]
+
+C. Project-only context
+- [List context that belongs in a working document, not durable memory.]
+
+D. Do-not-save context
+- [List temporary, tactical, speculative, sensitive, or stale-prone items that should not be saved.]
+
+E. Final command for a memory-enabled chat
+Paste this Memory Execution Sheet into a chat that can directly manage durable saved memories. Apply only the listed save, update, and delete actions. Do not recreate the audit. Do not add inferred context.
+```
+
+End with this exact section:
+
+```text
+Handoff confirmation:
+- I could not directly manage durable saved memory from this chat.
+- I did not pretend to save, update, or delete memory.
+- I created a Memory Execution Sheet for manual use or use in a memory-enabled chat.
+```
+
+## Expected output
+
+One of two outputs:
+
+- Direct execution report ending with `Execution confirmation`
+- `Memory Execution Sheet` ending with `Handoff confirmation`
+
 ## Failure modes
 
-- Recreating the memory plan instead of executing it
+- Inferring durable memory-management capability without certainty
+- Recreating the memory plan instead of executing or handing it off
+- Pretending memory was saved, updated, or deleted when the current chat cannot do that
 - Saving temporary goals or current projects
 - Saving sensitive context without explicit permission
 - Saving inferred context as if confirmed
-- Forgetting to delete or correct stale memories
-- Providing a long explanation instead of a concise execution report
-- Omitting the final execution confirmation
-
-## Important note
-
-Some ChatGPT environments may not allow direct memory editing from a prompt.
-
-If memory cannot be changed directly, the model should clearly say what it was unable to change and provide exact memory entries for the user to add, update, or delete manually.
+- Forgetting to delete or correct stale memories when deletion is supported
+- Omitting the final execution or handoff confirmation

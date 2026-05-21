@@ -2,7 +2,7 @@
 
 Last updated: YYYY-MM-DD
 
-## 1. Identity and role
+## 1. Role and current focus
 
 ### Confirmed facts
 -
@@ -13,7 +13,7 @@ Last updated: YYYY-MM-DD
 ### Unknowns
 -
 
-## 2. Company and business context
+## 2. Work, study, creative, or project context
 
 ### Confirmed facts
 -
@@ -35,7 +35,7 @@ Last updated: YYYY-MM-DD
 ### Unknowns
 -
 
-## 4. Current projects
+## 4. Current projects or responsibilities
 
 ### Confirmed facts
 -
@@ -46,7 +46,7 @@ Last updated: YYYY-MM-DD
 ### Unknowns
 -
 
-## 5. Key metrics and outcomes
+## 5. Key outcomes, metrics, or success criteria
 
 ### Confirmed facts
 -

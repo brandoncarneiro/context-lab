@@ -4,6 +4,8 @@ Context hygiene for serious ChatGPT users.
 
 Context Lab is an inspectable prompt workflow for auditing, cleaning, and operationalizing ChatGPT context.
 
+It is built for ChatGPT users, operators, founders, executives, consultants, creators, researchers, students, and knowledge workers who want better personalized output without stale or over-saved memory.
+
 It helps users build a cleaner operating profile, decide what should and should not be saved to memory, and turn that context into reusable workflows for strategy, writing, research, planning, and execution.
 
 It is not a prompt pack. It is not a memory dumping system. It is not a claim that ChatGPT knows you accurately. It is a context hygiene workflow.
@@ -41,7 +43,7 @@ After the full workflow, you should have:
 - A clear separation between durable memory and live working context
 - A reusable AI workflow library
 - Master prompts for future conversations
-- A final memory execution confirmation
+- A memory execution confirmation or Memory Execution Sheet
 
 ## Best sequence
 
@@ -51,7 +53,7 @@ After the full workflow, you should have:
 4. [Memory Cleanup](prompts/04-memory-cleanup.md)
 5. [AI Workflow Plan](prompts/05-ai-workflow-plan.md)
 6. [Master Prompt](prompts/06-master-prompt.md)
-7. [Memory Execution](prompts/07-memory-execution.md)
+7. [Memory Execution or Handoff](prompts/07-memory-execution.md)
 
 ## Memory Cleanup Fast Path
 
@@ -59,7 +61,7 @@ If you only want to clean up ChatGPT memory, use this shorter path:
 
 1. Run [Context Audit](prompts/01-context-audit.md)
 2. Run [Memory Cleanup](prompts/04-memory-cleanup.md)
-3. Run [Memory Execution](prompts/07-memory-execution.md)
+3. Run [Memory Execution or Handoff](prompts/07-memory-execution.md)
 
 Use the full seven-step workflow when you want a complete operating profile, reusable workflows, and master prompts.
 
@@ -67,13 +69,13 @@ Use the full seven-step workflow when you want a complete operating profile, reu
 
 Open a new ChatGPT conversation and paste the prompt in `prompts/01-context-audit.md`.
 
-After each response, continue through the seven prompts in order. Correct the model aggressively when it guesses, flatters, or treats stale context as current. Prompt 07 is the execution step: it asks ChatGPT to apply the approved memory cleanup plan and confirm what changed.
+After each response, continue through the seven prompts in order. Correct the model when it guesses, flatters, or treats stale context as current. Prompt 07 is capability-dependent: it either applies the approved cleanup plan where durable saved memory management is available or produces a Memory Execution Sheet for manual use or a memory-enabled chat.
 
 For a more detailed walkthrough, see [Quickstart](docs/quickstart.md).
 
 ## Memory execution note
 
-Some ChatGPT environments may not allow direct memory editing from a prompt. If direct memory changes are unavailable, Prompt 07 will produce exact memory entries to add, update, or delete manually.
+Prompt 07 does not assume every ChatGPT chat can directly modify saved memory. It checks capability first, then either executes the approved cleanup plan or produces a Memory Execution Sheet.
 
 ## What works today
 
@@ -83,15 +85,16 @@ Some ChatGPT environments may not allow direct memory editing from a prompt. If 
 - Memory cleanup workflow
 - AI workflow planner
 - Reusable master prompt generator
-- Memory execution prompt for applying approved memory changes
+- Memory execution or handoff prompt for approved memory cleanup plans
 - Templates for saved context documents
-- Before/after memory cleanup examples
-- Example founder/operator outputs
+- Fictionalized before/after memory cleanup examples
+- Optional role-specific examples
 
 ## Current limits
 
 - Markdown-only workflow
 - No automated memory API
+- Direct memory execution depends on the current chat's capabilities
 - No model-specific validation across ChatGPT, Claude, Gemini, or other models
 - No CLI yet
 - Output quality depends on how honestly the user corrects the model
@@ -102,7 +105,7 @@ Some ChatGPT environments may not allow direct memory editing from a prompt. If 
 - `prompts/`: the core seven-step prompt sequence
 - `templates/`: reusable blank context documents
 - `docs/`: principles, memory rules, fast paths, and failure modes
-- `examples/`: example outputs for adaptation, including before/after memory cleanup
+- `examples/`: fictionalized example outputs for adaptation
 - `.github/`: issue templates for bugs and workflow suggestions
 
 ## Related labs

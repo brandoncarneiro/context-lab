@@ -24,6 +24,8 @@ A workflow should expose assumptions, inputs, outputs, risks, and approval point
 
 Good AI output should produce decisions, drafts, plans, checklists, prompts, or next actions. Vague reflection is not enough.
 
-## 7. Confirm memory execution
+## 7. Confirm memory execution or handoff
 
 When memory changes are applied, the model should confirm what was saved, updated, forgotten, intentionally not saved, and what could not be changed.
+
+When memory changes cannot be applied from the current chat, the model should say so clearly and produce a Memory Execution Sheet instead of pretending.

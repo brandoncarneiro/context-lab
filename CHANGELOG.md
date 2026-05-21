@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Clarified Prompt 07 as capability-aware memory execution or handoff.
+- Added fallback behavior when durable saved memory cannot be managed from the current chat.
+- Added practical note to Prompt 07 about memory availability depending on ChatGPT mode, workspace, model, or settings.
+- Audited repository language to ensure examples and docs read as general-purpose, not personalized to a specific user.
+- Updated README, quickstart, fast path, principles, and failure modes to avoid overpromising direct memory writes.
+
 ## v0.1.0
 
 Initial public version of Context Lab.

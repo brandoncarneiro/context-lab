@@ -6,10 +6,10 @@ Use this to force ChatGPT to audit what it thinks it knows before relying on sta
 
 ## When to use
 
-- Before important strategy, coaching, writing, or operator-style work
+- Before important strategy, coaching, writing, research, planning, or execution work
 - When ChatGPT's advice feels generic or oddly personal
 - Before updating Custom Instructions or memory
-- After a major role, company, or priority change
+- After a major role, organization, project, or personal context change
 
 ## Prompt
 
@@ -27,8 +27,9 @@ Create a table with these columns:
 
 Cover these categories:
 
-- Who I am professionally
-- My current company, role, and responsibilities
+- Who I am professionally, academically, creatively, or personally
+- My current role, responsibilities, or focus
+- My organization, business, school, clients, or other relevant context
 - My goals and priorities
 - My current projects or initiatives
 - My decision-making style

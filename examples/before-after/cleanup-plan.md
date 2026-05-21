@@ -1,6 +1,6 @@
 # Example Cleanup Plan
 
-This is a fictionalized cleanup plan.
+This is a fictionalized cleanup plan for a general user. It is not a real user's memory state.
 
 ## Should be saved as durable memory
 
@@ -25,15 +25,14 @@ This is a fictionalized cleanup plan.
 
 ## Should be deleted or corrected if currently remembered
 
-- "The user is fundraising this quarter."
-- "The user is focused on the Acme partnership."
+- "The user is focused on a short-term funding, sales, or application push."
+- "The user is focused on a specific partnership or client conversation."
 - "The user prefers aggressive growth strategy."
-- Any old role, company, or project status that is no longer current
+- Any old role, organization, project, or status that is no longer current
 
 ## Sensitive context that should only be used when explicitly provided
 
-- Customer names
-- Deal terms
-- Revenue numbers
-- Private team issues
-- Personal health or family details
+- Client, customer, or collaborator names
+- Contract, deal, or application details
+- Financial numbers
+- Private team, household, or health issues
