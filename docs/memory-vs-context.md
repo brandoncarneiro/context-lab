@@ -45,3 +45,19 @@ Working documents are for live operating state.
 ## Rule of thumb
 
 If it may be wrong in 30 to 90 days, do not save it as durable memory.
+
+
+## Memory is not a project tracker
+
+Do not use memory to track active work.
+
+Use a dated working context document for:
+
+- current priorities
+- active projects
+- open deals
+- launch plans
+- weekly operating cadence
+- changing tool stacks
+
+Use memory for context that remains useful even when the current project changes.

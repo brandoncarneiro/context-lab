@@ -1,0 +1,32 @@
+---
+name: Workflow suggestion
+description: Suggest a new workflow, prompt, example, or adaptation
+title: "Workflow: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: What operator problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed addition
+      description: Describe the prompt, template, doc, or example you want added.
+    validations:
+      required: true
+  - type: textarea
+    id: failure_modes
+    attributes:
+      label: Failure modes
+      description: What could go wrong if this is used poorly?
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any examples or references that would help.

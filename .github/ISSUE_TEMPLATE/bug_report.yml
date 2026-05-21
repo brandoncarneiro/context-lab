@@ -1,0 +1,39 @@
+---
+name: Bug report
+description: Report a problem with a prompt, document, or workflow
+title: "Bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the issue clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - README
+        - Prompt sequence
+        - Memory cleanup
+        - Memory execution
+        - Templates
+        - Examples
+        - Docs
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add links, screenshots, model behavior, or relevant prompt output.
