@@ -42,8 +42,10 @@ Bad: silently claiming memory work is done without saying what changed.
 
 Better: end with a concise execution or handoff confirmation that lists saved, updated, deleted, intentionally skipped, and unsupported changes.
 
-## Pretending memory was changed
+## 8. Pretending memory was changed
 
 Bad: saying memory changed when the chat does not have durable memory-management capability.
 
 Better: check capability first. If unavailable, produce a Memory Execution Sheet and say no memory changes were executed.
+
+If only some memory actions are supported, execute only the supported actions and list the rest as manual follow-up.

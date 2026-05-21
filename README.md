@@ -10,6 +10,26 @@ It helps users build a cleaner operating profile, decide what should and should 
 
 It is not a prompt pack. It is not a memory dumping system. It is not a claim that ChatGPT knows you accurately. It is a context hygiene workflow.
 
+## Start here
+
+If you want the full workflow, open a new ChatGPT chat and paste Prompt 01:
+
+[Context Audit](prompts/01-context-audit.md)
+
+If you only want to clean up memory, use the fast path:
+
+1 → 4 → 7
+
+- [01 Context Audit](prompts/01-context-audit.md)
+- [04 Memory Cleanup](prompts/04-memory-cleanup.md)
+- [07 Memory Execution or Handoff](prompts/07-memory-execution.md)
+
+```text
+I want to run Context Lab. Start with Prompt 01: Context Audit. Audit your current context of me and my work, separate confirmed facts from assumptions and unknowns, and identify what should be kept, corrected, clarified, or ignored.
+```
+
+For a concrete walkthrough, see the [End-to-End Demo](examples/end-to-end-demo.md).
+
 ## Why it exists
 
 Most ChatGPT personalization fails because the model's context is incomplete, stale, tactical, over-saved, or unsupported.
@@ -89,6 +109,7 @@ Prompt 07 does not assume every ChatGPT chat can directly modify saved memory. I
 - Templates for saved context documents
 - Fictionalized before/after memory cleanup examples
 - Optional role-specific examples
+- [End-to-End Demo](examples/end-to-end-demo.md)
 
 ## Current limits
 
@@ -105,7 +126,7 @@ Prompt 07 does not assume every ChatGPT chat can directly modify saved memory. I
 - `prompts/`: the core seven-step prompt sequence
 - `templates/`: reusable blank context documents
 - `docs/`: principles, memory rules, fast paths, and failure modes
-- `examples/`: fictionalized example outputs for adaptation
+- `examples/`: fictionalized example outputs for adaptation, including the [End-to-End Demo](examples/end-to-end-demo.md)
 - `.github/`: issue templates for bugs and workflow suggestions
 
 ## Related labs

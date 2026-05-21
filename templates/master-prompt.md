@@ -2,12 +2,18 @@
 
 Use this as a reusable starting point for important ChatGPT conversations.
 
+Do not paste stale or temporary context into a reusable master prompt. Keep current projects, deadlines, sensitive details, and fast-changing priorities in a working context document unless you are making a project-specific prompt.
+
 ```text
 You are helping me with the task below.
 
-Here is my current operating context:
+Here is my durable context:
 
-[Paste concise operating profile]
+[Paste stable role, preferences, constraints, and reusable context]
+
+Current operating context, if relevant:
+
+[Paste only current context needed for this task]
 
 How I want help:
 - [Tone and level of directness]

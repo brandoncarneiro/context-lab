@@ -2,6 +2,8 @@
 
 Last updated: YYYY-MM-DD
 
+Keep entries short. Separate confirmed facts from assumptions. Leave unknowns explicit instead of filling gaps.
+
 ## 1. Role and current focus
 
 ### Confirmed facts

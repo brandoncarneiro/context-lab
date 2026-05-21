@@ -8,6 +8,8 @@ Use this after answering the gap interview to create a clean current operating p
 
 Using my answers and your prior audit, create a clean "Current Operating Profile" for me.
 
+Include `Last updated: YYYY-MM-DD` at the top. Use today's date if you know it. If you do not know today's date, use `Last updated: [date]` and ask me to replace it.
+
 Organize it into these sections:
 
 1. Role and current focus

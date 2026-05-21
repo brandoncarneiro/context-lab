@@ -29,7 +29,20 @@ For each area, give me:
 6. Risk or failure mode
 7. How often I should run it
 
-Then rank the top 10 workflows by usefulness.
+Then create a scoring table for the final top 10 workflows with these columns:
+
+1. Workflow
+2. Usefulness: 1-5
+3. Leverage: 1-5
+4. Effort required from user: 1-5, where 1 is low effort and 5 is high effort
+5. Risk if done poorly: 1-5
+6. Repeatability: 1-5
+7. Context required: low / medium / high
+8. Recommended cadence
+
+Then give me a final ranked list.
+
+Prioritize workflows with high usefulness, high leverage, high repeatability, manageable effort, clear input requirements, and low risk of stale-context mistakes.
 
 ## Expected output
 
@@ -38,7 +51,8 @@ Then rank the top 10 workflows by usefulness.
 - Required inputs for each workflow
 - Output formats
 - Risks and run cadence
-- A top 10 usefulness ranking
+- A top 10 scoring table
+- A final ranked list
 
 ## Failure modes
 

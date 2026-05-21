@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use this last to create reusable prompts for new ChatGPT conversations.
+Use this after the workflow plan to create reusable prompts for future ChatGPT conversations.
 
 ## Prompt
 
@@ -21,6 +21,12 @@ The prompt should tell ChatGPT:
 - When to ask questions versus make a best-effort recommendation
 - How to handle uncertainty
 - How to optimize for execution
+
+Separate durable context from current operating context.
+
+Do not include temporary goals, current projects, active deals, deadlines, pipeline details, sensitive context, or stale-prone context in reusable master prompts unless I explicitly ask for a project-specific version.
+
+Prefer a shorter reusable prompt for normal use and a longer prompt only for high-stakes strategy or planning sessions.
 
 Make it concise enough to be practical, but detailed enough to materially improve output quality.
 

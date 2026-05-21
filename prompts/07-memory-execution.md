@@ -21,33 +21,40 @@ Use the completed memory cleanup plan from this same chat as the source of truth
 
 If the completed memory cleanup plan is not available in this chat, stop and ask me to paste the completed memory cleanup plan before continuing.
 
-First, check whether durable saved memory management is available in this current chat.
+First, check which durable memory actions are actually available in this current chat.
 
-Do not infer this capability. If you are not certain you can directly manage durable saved memories, treat memory management as unavailable.
+Supported actions may include saving, updating, forgetting/deleting, or verifying saved memory.
+
+Do not infer capability. If you are not certain an action is supported, treat that action as unavailable.
 
 Practical note: If memory updates appear unavailable, check whether your current ChatGPT mode, workspace, model, or settings allow saved memory. Some environments may not expose durable memory writes.
 
-## Path A: Durable memory management is available
+If no durable memory actions are supported, use Path B.
 
-If you can directly create, update, and delete durable saved memories from this chat, execute the approved memory cleanup plan.
+## Path A: Some or all durable memory actions are available
+
+If at least one durable memory action is supported in this chat, perform only the approved memory actions that are actually supported.
 
 Apply only the approved changes from the cleanup plan:
 
-- Save items marked as durable, stable, useful memory.
-- Update or correct stale or inaccurate items where a corrected durable version exists.
-- Forget or delete stale, inaccurate, sensitive, or unsafe saved memories marked for deletion.
+- Save supported durable memories.
+- Update or correct supported durable memories where a corrected durable version exists.
+- Forget or delete supported stale, inaccurate, sensitive, or unsafe saved memories marked for deletion.
+- Verify saved-memory changes only if verification is supported.
+- List unsupported approved actions under manual follow-up.
+- Do not claim unsupported actions were executed.
 - Do not save temporary, tactical, speculative, sensitive, project-only, or stale-prone items.
 - Do not save anything inferred but not confirmed by me.
 
-Before each memory change, silently check whether the item is durable, useful, confirmed, and safe to remember.
+Before each supported memory action, silently check whether the item is durable, useful, confirmed, and safe to remember.
 
-After executing, give me a concise report with these sections:
+After executing supported actions, give me a concise report with these sections:
 
 1. Memories saved
 2. Memories updated or corrected
 3. Memories forgotten or deleted
 4. Items intentionally not saved
-5. Unsupported or manual actions, if any
+5. Unsupported or manual actions
 
 End with this exact section:
 
@@ -60,9 +67,9 @@ Execution confirmation:
 
 ## Path B: Durable memory management is unavailable
 
-If you cannot directly manage durable saved memories from this chat, say so clearly.
+If no durable memory actions are supported in this chat, say so clearly.
 
-Do not pretend anything was saved, updated, corrected, forgotten, or deleted.
+Do not pretend anything was saved, updated, corrected, forgotten, deleted, or verified.
 
 Produce a `Memory Execution Sheet` using only the completed cleanup plan:
 
@@ -82,7 +89,7 @@ D. Do-not-save context
 - [List temporary, tactical, speculative, sensitive, or stale-prone items that should not be saved.]
 
 E. Final command for a memory-enabled chat
-Paste this Memory Execution Sheet into a chat that can directly manage durable saved memories. Apply only the listed save, update, and delete actions. Do not recreate the audit. Do not add inferred context.
+Paste this Memory Execution Sheet into a chat that can directly manage durable saved memories. Apply only the listed save, update, and delete actions that are supported. Do not recreate the audit. Do not add inferred context.
 ```
 
 End with this exact section:
@@ -98,16 +105,17 @@ Handoff confirmation:
 
 One of two outputs:
 
-- Direct execution report ending with `Execution confirmation`
+- Direct execution report for supported actions, ending with `Execution confirmation`
 - `Memory Execution Sheet` ending with `Handoff confirmation`
 
 ## Failure modes
 
 - Inferring durable memory-management capability without certainty
+- Treating partial memory support as full memory support
 - Recreating the memory plan instead of executing or handing it off
-- Pretending memory was saved, updated, or deleted when the current chat cannot do that
+- Pretending memory was saved, updated, verified, or deleted when the current chat cannot do that
 - Saving temporary goals or current projects
 - Saving sensitive context without explicit permission
 - Saving inferred context as if confirmed
-- Forgetting to delete or correct stale memories when deletion is supported
+- Forgetting to list unsupported approved actions for manual follow-up
 - Omitting the final execution or handoff confirmation
