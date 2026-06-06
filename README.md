@@ -121,6 +121,10 @@ Prompt 07 does not assume every ChatGPT chat can directly modify saved memory. I
 - Output quality depends on how honestly the user corrects the model
 - Sensitive context still requires user judgment
 
+## Public review status
+
+Context Lab is public by design as a Markdown workflow. It contains fictionalized examples, a security policy for sensitive memory/context material, and a docs CI workflow that validates local Markdown links. See [Public Review Notes](docs/public-review.md).
+
 ## Repository contents
 
 - `prompts/`: the core seven-step prompt sequence
